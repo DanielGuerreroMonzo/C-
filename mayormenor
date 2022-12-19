@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n1,n2,n3;
+    cout<<"introduce tu edad: ";
+    cin>> edad;
+    if (n1<n2){
+        if(n1>n3){
+            cout<<"el mayor es", n1;
+        }
+    }
+    else{
+        cout<<"eres menor";
+    }
+    return 0;
+}
