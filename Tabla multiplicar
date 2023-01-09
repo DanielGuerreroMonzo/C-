@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int cont;
+	int A;
+	cout<<"dime el numero para multiplicarlo";
+	cin>>A;
+	for(cont=1;cont<=10;cont++){
+		cout<<"   ";
+		cout<<cont*A;
+	}
+	return 0;
+}
