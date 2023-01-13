@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+
+int pitagoras(int n1, int n2,int n3){
+	int  c1,c2,hip;
+	int respuesta=0;
+	if (n1>n2 && n1>n3){
+		hip=n1; 
+		c1=n2; 
+		c2=n3;
+	}	
+	if (n2>n1 && n2>n3){
+		hip=n2; 
+		c1=n1; 
+		c2=n3;
+	}	
+	if (n3>n2 && n3>n1){
+		hip=n3; 
+		c1=n2; 
+		c2=n1;
+	}
+	if (hip*hip==c1*c1+c2*c2) {
+		int respuesta=1;
+	}
+	if (hip*hip!=c1*c1+c2*c2) {
+		int respuesta=0;
+	}
+	
+return respuesta, c1, c2, hip;
+}
+
+int main(){
+	int c1,c2,hip;
+	int n1,n2, n3, respuesta;
+	cout<<"Dime tres números"<<endl;
+	cout<<"1º --> ";
+	cin>>n1;
+	cout<<"2º --> ";
+	cin>>n2;
+	cout<<"3º --> ";
+	cin>>n3;
+
+	if (respuesta=1){ 
+		cout<<"El"<<c1<<"y el"<<c2<<"son catetos, y el"<<hip<<"hipotenusa";
+	}
+	if (respuesta=0){ 
+		cout<<"no has acertado";
+	}
+	return 0;
+}
