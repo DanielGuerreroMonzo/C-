@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<iostream>
+using namespace std;
+int cuenta(char *p_nom){
+	int cont=0;
+	while(*(p_nom+cont)!='\0'){
+		cont++;	
+	}
+	return cont;
+}
+
+
+int main(){
+	char*troncos[3];
+	char nom[10];
+	int leng;
+	int cont;	
+	
+	
+	cout<<"Dime tres nombres --> ";
+	cin>>nom;
+	cout<<"\nHas introducido:"<<nom;
+	leng=cuenta(nom);
+	for(cont=0;cont<=leng;cont++){
+		printf("\n%c",*(nom+cont));
+	}
+	printf("Longitud= %d", leng);
+	
+	return 0;
+
+}
